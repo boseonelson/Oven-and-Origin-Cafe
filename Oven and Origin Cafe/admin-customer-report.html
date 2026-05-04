@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Report | Oven and Origin Cafe</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body data-page="customer-report">
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            Oven and Origin Cafe
+        </div>
+    </header>
+
+    <main class="account-page">
+        <aside class="sidebar">
+            <div class="profile-box">
+                <img src="brandlogo.jpg" alt="Oven and Origin Cafe logo">
+                <p class="hello">Admin Staff</p>
+                <h1 id="sidebarName">Admin Staff</h1>
+            </div>
+
+            <nav class="account-nav" aria-label="Admin staff navigation">
+                <a class="side-link" href="admin-staff-order.html">Order</a>
+                <a class="side-link active" href="admin-customer-report.html">Customer Report</a>
+                <a class="side-link" href="admin-product-management.html">Product Management</a>
+                <button class="side-link logout-link" type="button" id="logoutBtn">Log Out</button>
+            </nav>
+        </aside>
+
+        <section class="account-content">
+            <div class="account-hero">
+                <div>
+                    <p class="eyebrow">Admin Staff</p>
+                    <h2 id="heroName">Admin Staff</h2>
+                    <p>Review customer order activity and total customer spending.</p>
+                </div>
+            </div>
+
+            <section class="panel active">
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <p>Customers</p>
+                        <strong id="customerCount">0</strong>
+                    </div>
+                    <div class="dashboard-card">
+                        <p>Customer Orders</p>
+                        <strong id="customerOrders">0</strong>
+                    </div>
+                </div>
+
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Orders</th>
+                            <th>Total Spent</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customerRows"></tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Tools | Oven and Origin Cafe</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body data-page="super-tools">
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            Oven and Origin Cafe
+        </div>
+    </header>
+
+    <main class="account-page">
+        <aside class="sidebar">
+            <div class="profile-box">
+                <img src="brandlogo.jpg" alt="Oven and Origin Cafe logo">
+                <p class="hello">Super Admin</p>
+                <h1 id="sidebarName">Super Admin</h1>
+            </div>
+
+            <nav class="account-nav" aria-label="Super admin navigation">
+                <a class="side-link" href="super-user-management.html">User Management</a>
+                <a class="side-link" href="super-financial-management.html">Financial Management</a>
+                <a class="side-link active" href="super-admin-tools.html">Admin Tools</a>
+                <button class="side-link logout-link" type="button" id="logoutBtn">Log Out</button>
+            </nav>
+        </aside>
+
+        <section class="account-content">
+            <div class="account-hero">
+                <div>
+                    <p class="eyebrow">Super Admin</p>
+                    <h2 id="heroName">Super Admin</h2>
+                    <p>Access important administration tools for the cafe system.</p>
+                </div>
+            </div>
+
+            <section class="panel active">
+                <div class="tool-list">
+                    <article class="tool-item">
+                        <h4>Admin Staff Account</h4>
+                        <p>Add a new admin staff login account. This is saved only in browser localStorage.</p>
+
+                        <form class="product-form account-tool-form" id="adminAccountForm">
+                            <label>
+                                Display Name
+                                <input type="text" id="adminDisplayName" required>
+                            </label>
+
+                            <label>
+                                Username
+                                <input type="text" id="adminUsername" required>
+                            </label>
+
+                            <label>
+                                Password
+                                <input type="text" id="adminPassword" required>
+                            </label>
+
+                            <button class="brown-btn" type="submit">Add Admin Staff</button>
+                        </form>
+                    </article>
+
+                    <article class="tool-item">
+                        <h4>Role Access</h4>
+                        <p>Kick, restore, or delete user and admin staff accounts.</p>
+
+                        <h5>Admin Staff Accounts</h5>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminAccountRows"></tbody>
+                        </table>
+
+                        <h5>User Accounts</h5>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="userAccountRows"></tbody>
+                        </table>
+                    </article>
+
+                    <article class="tool-item">
+                        <h4>Audit Summary</h4>
+                        <p id="auditSummary">Check order, product, user, and financial activity from one admin area.</p>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>
