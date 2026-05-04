@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Order | Oven and Origin Cafe</title>
+    <link rel="stylesheet" href="user-order.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            Oven and Origin Cafe
+        </div>
+    </header>
+
+    <main class="account-page">
+        <aside class="sidebar">
+            <div class="profile-box">
+                <img src="brandlogo.jpg" alt="Oven and Origin Cafe logo">
+                <p class="hello">Welcome back</p>
+                <h1 id="sidebarName">Cafe Guest</h1>
+            </div>
+
+            <nav class="account-nav" aria-label="User account navigation">
+                <a class="side-link" href="user-menu.html">Menu</a>
+                <a class="side-link active" href="user-order.html">Order</a>
+                <a class="side-link" href="user-history.html">Purchase History</a>
+                <a class="side-link" href="user-management.html">Account Management</a>
+                <button class="side-link logout-link" type="button" id="logoutBtn">Log Out</button>
+            </nav>
+        </aside>
+
+        <section class="account-content">
+            <div class="account-hero">
+                <div>
+                    <p class="eyebrow">Current Cart</p>
+                    <h2 id="heroName">Cafe Guest</h2>
+                    <p>Review your selected items before placing your order.</p>
+                </div>
+                <a class="order-now" href="user-menu.html">Add More Items</a>
+            </div>
+
+            <section class="panel active">
+                <div class="panel-header">
+                    <div>
+                        <p class="eyebrow">Order</p>
+                        <h3>Your Order</h3>
+                    </div>
+                    <span class="badge" id="cartTotal">P0</span>
+                </div>
+
+                <div class="order-list" id="orderList"></div>
+
+                <div class="panel-actions">
+                    <button class="brown-btn" type="button" id="checkoutBtn">Place Order</button>
+                    <a class="outline-btn" href="user-menu.html">Add More Items</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="user-order.js"></script>
+</body>
+</html>
