@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase History | Oven and Origin Cafe</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            Oven and Origin Cafe
+        </div>
+    </header>
+
+    <main class="account-page">
+        <aside class="sidebar">
+            <div class="profile-box">
+                <img src="brandlogo.jpg" alt="Oven and Origin Cafe logo">
+                <p class="hello">Welcome back</p>
+                <h1 id="sidebarName">Cafe Guest</h1>
+            </div>
+
+            <nav class="account-nav" aria-label="User account navigation">
+                <a class="side-link" href="user-menu.html">Menu</a>
+                <a class="side-link" href="user-order.html">Order</a>
+                <a class="side-link active" href="user-history.html">Purchase History</a>
+                <a class="side-link" href="user-management.html">Account Management</a>
+                <button class="side-link logout-link" type="button" id="logoutBtn">Log Out</button>
+            </nav>
+        </aside>
+
+        <section class="account-content">
+            <div class="account-hero">
+                <div>
+                    <p class="eyebrow">Past Orders</p>
+                    <h2 id="heroName">Cafe Guest</h2>
+                    <p>See all orders placed from your account.</p>
+                </div>
+                <a class="order-now" href="user-menu.html">Order Again</a>
+            </div>
+
+            <section class="panel active">
+                <div class="panel-header">
+                    <div>
+                        <p class="eyebrow">History</p>
+                        <h3>Purchase History</h3>
+                    </div>
+                </div>
+
+                <div class="history-list" id="historyList"></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="user-history.js"></script>
+</body>
+</html>
