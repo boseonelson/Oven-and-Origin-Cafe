@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("background coffee.webp") center/cover no-repeat fixed;
+    position: relative;
+}
+
+/*Navigation Section*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b5e3c;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: #f5c16c; 
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;    
+    gap: 10px;
+}   
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #f5c16c;
+}
+
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                url('coffee-bg.png'); /* Palitan mo ito ng iyong image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+.badge {
+    background: #e69156;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #4a3427;
+    margin: 20px 0;
+}
+
+.highlight {
+    color: #8d5c3d;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn.primary {
+    background-color: #8d5c3d;
+    color: white;
+}
+
+.btn.secondary {
+    border: 2px solid #8d5c3d;
+    color: #8d5c3d;
+}
+
+.features {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pets-section {
+    padding: 80px 20px;
+    background-color: #f2e3c9; 
+    display: flex;
+    justify-content: center;
+}
+
+.pets-card {
+    background: #fffaf0;
+    padding: 40px;
+    border-radius: 30px;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.pets-icons { font-size: 24px; margin-bottom: 15px; }
+
+.pets-features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.footer {
+    background-color: #5c3517;
+    color: #f8e8d8;
+    padding: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-col h3 {
+    color: #e69156;
+}
+
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+}
